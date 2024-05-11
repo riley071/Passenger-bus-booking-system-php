@@ -1,0 +1,93 @@
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #343a40; /* Dark background color */
+    padding-top: 50px;
+    overflow-y: auto; /* Add scrollbar for overflow */
+}
+
+.sidebar h2 {
+    color: #fff; /* White text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: #d1d8e0; /* Light text color */
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #495057; /* Darker background color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    background-color: white; /* Dark background color */
+    border: none;
+}
+
+.dropdown-menu a {
+    color: black; /* Light text color */
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #495057; /* Darker background color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Content area styles */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s; /* Smooth transition for margin */
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Custom styles */
+h2 {
+    color: #343a40; /* Dark text color */
+    margin-top: 0;
+}
+
+h4 {
+    color: #007bff; /* Blue text color */
+}
+
+p {
+    color: #6c757d; /* Gray text color */
+}
+
+/* Chart container */
+.chart-container {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+    .sidebar {
+        left: 0; /* Ensure sidebar is always visible on larger screens */
+    }
+    .content {
+        margin-left: 250px; /* Adjust content margin on larger screens */
+    }
+}
+
+
